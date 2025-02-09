@@ -1,6 +1,6 @@
 import "./globals.css";
-import LeftBar from "@/components/Leftbar";
-import RightBar from "@/components/Rightbar";
+import LeftBar from "@/components/LeftBar";
+import RightBar from "@/components/RightBar";
 
 export default function RootLayout({
   children,
@@ -11,13 +11,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl xxl:max-w-screen-xxl flex justify-between mx-auto">
-          <div className="px-2 h-screen xsm:px-4 xxl-px-8 bg-red-400 ">
+          <div className="px-2 xsm:px-4 xxl-px-8  ">
             <LeftBar />
           </div>
-          <div className="flex-1 lg:min-w-[600px] border-x-[1px] border-gray-100 h-screen bg-blue-400">
+          <div className="flex-1 lg:min-w-[600px] border-x-[1px] border-borderGray">
             {children}
           </div>
-          <div className="hidden lg:flex ml-4 md:ml-8 flex-1 h-screen bg-yellow-400">
+          <div className="hidden lg:flex ml-4 md:ml-8 flex-1 ">
             <RightBar />
           </div>
         </div>
