@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "./Image";
 
 const PopularTag = () => {
@@ -19,8 +20,8 @@ const PopularTag = () => {
         </div>
         <div className="flex-1">
           <h1 className="font-bold text-textGrayLight">
-            Tokyo Olympics: India men's hockey team look to bounce back against
-            Spain
+            Tokyo Olympics: India men&apos;s hockey team look to bounce back
+            against Spain
           </h1>
           <span className="text-sm text-textGray">Last Night</span>
         </div>
@@ -61,6 +62,9 @@ const PopularTag = () => {
         <h1 className="font-bold text-textGrayLight">Tokyo Olympics: India</h1>
         <span className="text-textGray text-sm">20k posts</span>
       </div>
+      <Link href="/explore" className="text-iconBlue text-sm font-bold">
+        Show more
+      </Link>
     </div>
   );
 };
