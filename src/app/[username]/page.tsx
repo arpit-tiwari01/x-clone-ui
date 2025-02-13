@@ -28,12 +28,7 @@ const Page = () => {
           </div>
           {/* AVATAR */}
           <div className="w-1/5 aspect-square rounded-full overflow-hidden border-4 border-black bg-gray-300 absolute left-4 -translate-y-1/2">
-            <Image
-              path="general/avatar.png"
-              alt="avatar"
-              w={100}
-              h={100}
-            ></Image>
+            <Image path="general/avatar.png" alt="" w={100} h={100} tr={true} />
           </div>
         </div>
         {/* USER INFO */}
