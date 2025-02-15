@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "./Image";
 
@@ -100,14 +102,22 @@ const LeftBar = () => {
         </div>
         {/* BUTTON */}
         <Link
-          href="/compose/post"
+          href={{
+            pathname: "/compose/post",
+            query: { modal: "true" },
+          }}
           className="bg-white text-black rounded-full w-12 h-12 flex items-center justify-center xxl:hidden"
+          replace
         >
           <Image path="icons/post.svg" alt="new post" w={24} h={24} />
         </Link>
         <Link
-          href="/compose/post"
+          href={{
+            pathname: "/compose/post",
+            query: { modal: "true" },
+          }}
           className="hidden xxl:block bg-white text-black rounded-full font-bold py-2 px-14"
+          replace
         >
           New Post
         </Link>
